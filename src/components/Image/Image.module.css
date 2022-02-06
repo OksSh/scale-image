@@ -1,0 +1,14 @@
+.image {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.imageScale {
+  width: 600px;
+  height: 600px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  bottom: calc(50%-600px);
+}
