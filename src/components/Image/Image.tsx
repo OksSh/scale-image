@@ -9,7 +9,7 @@ export interface IPropsImage {
 export const Image = ({ url, title }: IPropsImage) => {
   const [toggle, setToggle] = useState<boolean>(false);
 
-  const onClickAdd = () => {
+  const onClickImage = () => {
     setToggle(!toggle);
   };
 
@@ -20,10 +20,10 @@ export const Image = ({ url, title }: IPropsImage) => {
           className={styles.imageScale}
           src={url}
           alt=''
-          onClick={onClickAdd}
+          onClick={onClickImage}
         />
       ) : (
-        <img className={styles.image} src={url} alt='' onClick={onClickAdd} />
+        <img className={styles.image} src={url} alt='' onClick={onClickImage} />
       )}
       <p>{title}</p>
     </div>
